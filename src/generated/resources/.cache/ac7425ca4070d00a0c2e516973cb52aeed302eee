@@ -1,0 +1,13 @@
+// 1.20.1	2025-02-26T02:55:09.895597	Block States: dinomod
+5902ee060956c1e5fc458c830d05c475431866e7 assets/dinomod/blockstates/amber_block.json
+494000d921d3ce3e02247fdcd2cf5f45805aa115 assets/dinomod/blockstates/amber_stone.json
+33fb51158b648c33e3dcaa113dbcbce5d7a48738 assets/dinomod/blockstates/carbon_fossil.json
+ceab87609c58f1b2299aca76e66b0662aaf5c407 assets/dinomod/blockstates/fossil_ore.json
+650202676f693e66c2fceae16dd1a9585d982cdb assets/dinomod/models/block/amber_block.json
+007f400a27a7601844da1e958d37f016d87da8b1 assets/dinomod/models/block/amber_stone.json
+d311591f9de5ea30ce559d7cf0c538bd808ea735 assets/dinomod/models/block/carbon_fossil.json
+e18ff421bc2d41aac371849af3229fc057ed716b assets/dinomod/models/block/fossil_ore.json
+89dda05f1743ec24867612ec2e4a479bf534edcd assets/dinomod/models/item/amber_block.json
+1dfc56176c99cfe56441fe3b7fb1e917a73d58b7 assets/dinomod/models/item/amber_stone.json
+058c39e714c9ec3b9123ff2db6051faae807652e assets/dinomod/models/item/carbon_fossil.json
+cbdd34c5db64807fd24605b9931ddcddca171b0d assets/dinomod/models/item/fossil_ore.json

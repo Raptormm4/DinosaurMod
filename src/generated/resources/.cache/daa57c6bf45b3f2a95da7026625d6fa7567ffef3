@@ -1,0 +1,5 @@
+// 1.20.1	2025-02-26T02:54:07.263731	Tags for minecraft:block mod id dinomod
+cef8e0879e23f908f106a7a5377dca8253db96b5 data/forge/tags/blocks/ores.json
+dfe3e2ad73704b975e366ac5e107825b84912eca data/minecraft/tags/blocks/mineable/pickaxe.json
+cccc690cee33af8629d52733c532fd48a2bf805c data/minecraft/tags/blocks/needs_iron_tool.json
+cdf6c128807f988e6d0c13157b1f4a9b7efcca45 data/minecraft/tags/blocks/needs_stone_tool.json

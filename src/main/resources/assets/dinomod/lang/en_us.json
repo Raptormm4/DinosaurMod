@@ -1,0 +1,18 @@
+{
+  "item.dinomod.fossil": "Fossil",
+  "item.dinomod.plant_fossil": "Plant Fossil",
+  "item.dinomod.amber": "Amber",
+  "item.dinomod.dodo_egg": "Dodo Egg",
+  "item.dinomod.syringe": "Syringe",
+  "item.dinomod.raw_dna": "Raw DNA",
+  "item.dinomod.dodo_spawn_egg": "Dodo Spawn Egg",
+  "item.dinomod.dodo_meat": "Raw Dodo",
+  "item.dinomod.cooked_dodo_meat": "Cooked Dodo",
+
+  "block.dinomod.fossil_ore": "Petrified Fossil",
+  "block.dinomod.carbon_fossil": "Carbon Fossil",
+  "block.dinomod.amber_block": "Amber Block",
+  "block.dinomod.amber_stone": "Amber Stone",
+
+  "creativetab.dino_tab": "Archeology"
+}
