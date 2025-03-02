@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-28T02:18:37.258544	Item Models: dinomod
+// 1.20.1	2025-03-01T22:38:46.020893	Item Models: dinomod
 5fb28b1a7864a941485be4bc817f39c6c66270d0 assets/dinomod/models/item/amber.json
 e5a933bdc0de297b2ce1c7c9121a2e287b25325d assets/dinomod/models/item/cooked_dodo_meat.json
 794df5848173fd27b054d213e975ed3dfa37f8f5 assets/dinomod/models/item/dodo_egg.json
@@ -8,3 +8,4 @@ da54e1f7a447b714f1f32496af496d80e9fbd8ed assets/dinomod/models/item/fossil.json
 4c3898b7cff643fc39f0a7e7c22f004a5cd2d526 assets/dinomod/models/item/plant_fossil.json
 d3d250e36414cb2ba92e71a5c45a5ad66786072f assets/dinomod/models/item/raw_dna.json
 deadb2f274afb9373ead3b8217bcc00543a05919 assets/dinomod/models/item/syringe.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/dinomod/models/item/trike_spawn_egg.json

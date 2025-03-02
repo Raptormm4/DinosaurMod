@@ -23,6 +23,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> DODO_SPAWN_EGG = ITEMS.register("dodo_spawn_egg", () ->
             new ForgeSpawnEggItem(ModEntities.DODO, 0x9E9E9E, 0x947251, new Item.Properties()));
+    public static final RegistryObject<Item> TRIKE_SPAWN_EGG = ITEMS.register("trike_spawn_egg", () ->
+            new ForgeSpawnEggItem(ModEntities.TRICERATOPS, 0xC679120, 0xEBAB21, new Item.Properties()));
 
     public static final RegistryObject<Item> DODO_MEAT = ITEMS.register("dodo_meat",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_DODO_MEAT)));
