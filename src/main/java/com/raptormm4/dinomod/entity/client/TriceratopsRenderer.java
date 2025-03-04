@@ -17,7 +17,7 @@ public class TriceratopsRenderer extends MobRenderer<TriceratopsEntity, Tricerat
     @Override
     public void render(TriceratopsEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pPoseStack, MultiBufferSource pBuffer, int pPackedLight) {
         if(pEntity.isBaby()) {
-            pPoseStack.scale(0.3f, 0.3f, 0.3f);
+            pPoseStack.scale(0.6f, 0.6f, 0.6f);
         }
 
         super.render(pEntity, pEntityYaw, pPartialTicks, pPoseStack, pBuffer, pPackedLight);

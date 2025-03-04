@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DODO_MEAT.get());
                         pOutput.accept(ModItems.COOKED_DODO_MEAT.get());
                         pOutput.accept(ModItems.TRIKE_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.BRACHIOSAURUS_SPAWN_EGG.get());
 
                         pOutput.accept(ModBlocks.FOSSIL_ORE.get());
                         pOutput.accept(ModBlocks.CARBON_FOSSIL.get());

@@ -1,6 +1,7 @@
 package com.raptormm4.dinomod.entity;
 
 import com.raptormm4.dinomod.DinoMod;
+import com.raptormm4.dinomod.entity.custom.BrachiosaurusEntity;
 import com.raptormm4.dinomod.entity.custom.DodoEntity;
 import com.raptormm4.dinomod.entity.custom.TriceratopsEntity;
 import com.raptormm4.dinomod.entity.projectile.ThrownDodoEgg;
@@ -20,7 +21,10 @@ public class ModEntities {
                     .sized(0.8f, 0.8f).build("dodo"));
     public static final RegistryObject<EntityType<TriceratopsEntity>> TRICERATOPS = ENTITY_TYPES.register("triceratops",
             () -> EntityType.Builder.of(TriceratopsEntity::new, MobCategory.CREATURE)
-                    .sized(3f,2f).build("triceratops"));
+                    .sized(2f,1f).build("triceratops"));
+    public static final RegistryObject<EntityType<BrachiosaurusEntity>> BRACHIOSAURUS = ENTITY_TYPES.register("brachiosaurus",
+            () -> EntityType.Builder.of(BrachiosaurusEntity::new, MobCategory.CREATURE)
+                    .sized(2f,5f).build("brachiosaurus"));
 
     public static final RegistryObject<EntityType<ThrownDodoEgg>> THROWN_DODO_EGG =
             ENTITY_TYPES.register("thrown_dodo_egg", () -> EntityType.Builder.<ThrownDodoEgg>of(ThrownDodoEgg::new, MobCategory.MISC)

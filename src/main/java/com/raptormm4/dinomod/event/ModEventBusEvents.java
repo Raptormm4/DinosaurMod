@@ -4,6 +4,7 @@ import com.raptormm4.dinomod.DinoMod;
 import com.raptormm4.dinomod.entity.ModEntities;
 import com.raptormm4.dinomod.entity.client.DodoModel;
 import com.raptormm4.dinomod.entity.client.TriceratopsModel;
+import com.raptormm4.dinomod.entity.custom.BrachiosaurusEntity;
 import com.raptormm4.dinomod.entity.custom.DodoEntity;
 import com.raptormm4.dinomod.entity.custom.TriceratopsEntity;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,6 +25,7 @@ public class ModEventBusEvents {
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.DODO.get(), DodoEntity.createAttributes().build());
         event.put(ModEntities.TRICERATOPS.get(), TriceratopsEntity.createAttributes().build());
+        event.put(ModEntities.BRACHIOSAURUS.get(), BrachiosaurusEntity.createAttributes().build());
     }
 
 }

@@ -14,7 +14,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -22,12 +21,10 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
+public class BrachiosaurusEntity extends Animal {
+    private static final Ingredient brachiosaurusFoods;
 
-public class TriceratopsEntity extends Animal {
-    private static final Ingredient trikeFoods;
-
-    public TriceratopsEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
+    public BrachiosaurusEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
@@ -68,7 +65,7 @@ public class TriceratopsEntity extends Animal {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new PanicGoal(this, 1.2));
         this.goalSelector.addGoal(2, new BreedGoal(this, 1.0));
-        this.goalSelector.addGoal(3, new TemptGoal(this, 1.0, trikeFoods, false));
+        this.goalSelector.addGoal(3, new TemptGoal(this, 1.0, brachiosaurusFoods, false));
         this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.1));
         this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 1.0));
         this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 6.0f));
@@ -77,22 +74,20 @@ public class TriceratopsEntity extends Animal {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
-                .add(Attributes.MAX_HEALTH, 40.0d)
-                .add(Attributes.FOLLOW_RANGE, 25d)
-                .add(Attributes.MOVEMENT_SPEED, 0.2d)
-                .add(Attributes.ARMOR, 8.0d)
-                .add(Attributes.KNOCKBACK_RESISTANCE, 1.0d);
+                .add(Attributes.MAX_HEALTH, 25.0d)
+                .add(Attributes.FOLLOW_RANGE, 30d)
+                .add(Attributes.MOVEMENT_SPEED, 0.3d);
     }
 
     @Override
     @Nullable
     public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
-        return ModEntities.TRICERATOPS.get().create(serverLevel);
+        return ModEntities.BRACHIOSAURUS.get().create(serverLevel);
     }
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return trikeFoods.test(pStack);
+        return brachiosaurusFoods.test(pStack);
     }
 
     @Override
@@ -114,9 +109,8 @@ public class TriceratopsEntity extends Animal {
     }
 
     static {
-        trikeFoods = Ingredient.of(new ItemLike[]{Items.APPLE, Items.ACACIA_LEAVES, Items.AZALEA_LEAVES, Items.BIRCH_LEAVES,
+        brachiosaurusFoods = Ingredient.of(new ItemLike[]{Items.APPLE, Items.ACACIA_LEAVES, Items.AZALEA_LEAVES, Items.BIRCH_LEAVES,
                 Items.CHERRY_LEAVES, Items.JUNGLE_LEAVES, Items.DARK_OAK_LEAVES, Items.OAK_LEAVES, Items.SPRUCE_LEAVES,
                 Items.FLOWERING_AZALEA_LEAVES,Items.MANGROVE_LEAVES});
     }
-
 }

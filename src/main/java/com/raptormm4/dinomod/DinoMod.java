@@ -3,6 +3,7 @@ package com.raptormm4.dinomod;
 import com.mojang.logging.LogUtils;
 import com.raptormm4.dinomod.block.ModBlocks;
 import com.raptormm4.dinomod.entity.ModEntities;
+import com.raptormm4.dinomod.entity.client.BrachiosaurusRenderer;
 import com.raptormm4.dinomod.entity.client.DodoRenderer;
 import com.raptormm4.dinomod.entity.client.TriceratopsRenderer;
 import com.raptormm4.dinomod.item.ModCreativeModeTabs;
@@ -60,6 +61,8 @@ public class DinoMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.DODO.get(), DodoRenderer::new);
             EntityRenderers.register(ModEntities.TRICERATOPS.get(), TriceratopsRenderer::new);
+            EntityRenderers.register(ModEntities.BRACHIOSAURUS.get(), BrachiosaurusRenderer::new);
+
             EntityRenderers.register(ModEntities.THROWN_DODO_EGG.get(), ThrownItemRenderer::new);
         }
     }
